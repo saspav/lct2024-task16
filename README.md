@@ -21,11 +21,11 @@ aeroplane/
 ├── data_process.py  - класс для обработки текста и поиск сущностей  
 ├── main_predict.py  - скрипт предсказания сущностей по файлу 'test.csv'  
 ├── model/           - каталог с предобученной моделью BERT или DeBERTa  
-│   ├── config.json  
-│   ├── model.safetensors  
-│   ├── special_tokens_map.json  
-│   ├── tokenizer_config.json  
-│   ├── vocab.txt  
+│       ├── config.json  
+│       ├── model.safetensors  
+│       ├── special_tokens_map.json  
+│       ├── tokenizer_config.json  
+│       ├── vocab.txt  
 ├── requirements.txt - необходимые библиотеки для проекта  
 ├── test.csv         - тестовые данные для предсказаний  
 └── Dockerfile       - инструкции для создания образа контейнера  
