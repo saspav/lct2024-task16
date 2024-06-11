@@ -11,21 +11,22 @@
 
 # Порядок работы
 
-1. Работоспособность модели проверена на Python 3.10 и 3.11.
-2. В файле requirements.txt необходимые модули для работы.
-3. Получение предсказаний из файла test.csv: python.exe main_predict.py
-4. Структура проекта:
-aeroplane/
-├── index.html       - HTML-файл для работы с приложением через браузер
-├── api_app.py       - приложение для работы с моделью
-├── data_process.py  - класс для обработки текста и поиск сущностей
-├── main_predict.py  - скрипт предсказания сущностей по файлу 'test.csv'
-├── model/           - каталог с предобученной моделью BERT или DeBERTa
-│   ├── config.json
-│   ├── model.safetensors
-│   ├── special_tokens_map.json
-│   ├── tokenizer_config.json
-│   ├── vocab.txt
-├── requirements.txt - необходимые библиотеки для проекта
-├── test.csv         - тестовые данные для предсказаний
-└── Dockerfile       - инструкции для создания образа контейнера
+1. Работоспособность модели проверена на Python 3.10 и 3.11.  
+2. В файле requirements.txt необходимые модули для работы.  
+3. Получение предсказаний из файла test.csv: python.exe main_predict.py  
+4. Структура проекта:  
+aeroplane/  
+├── index.html       - HTML-файл для работы с приложением через браузер  
+├── api_app.py       - приложение для работы с моделью  
+├── data_process.py  - класс для обработки текста и поиск сущностей  
+├── main_predict.py  - скрипт предсказания сущностей по файлу 'test.csv'  
+├── model/           - каталог с предобученной моделью BERT или DeBERTa  
+│   ├── config.json  
+│   ├── model.safetensors  
+│   ├── special_tokens_map.json  
+│   ├── tokenizer_config.json  
+│   ├── vocab.txt  
+├── requirements.txt - необходимые библиотеки для проекта  
+├── test.csv         - тестовые данные для предсказаний  
+└── Dockerfile       - инструкции для создания образа контейнера  
+
