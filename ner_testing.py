@@ -6,7 +6,7 @@ class TestDataTransform(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        bert_name = 'DeepPavlov/rubert-base-cased-conversational'
+        # bert_name = 'DeepPavlov/rubert-base-cased-conversational'
         bert_name = './model'
         bert_tuned = './model'
         cls.dps = DataTransform(model_name=bert_name, model_path=bert_tuned)
