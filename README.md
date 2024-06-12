@@ -21,6 +21,7 @@ aeroplane/
 ├── api_app_reqs.py  - проверка работы приложения из Python  
 ├── data_process.py  - класс для обработки текста и поиск сущностей  
 ├── main_predict.py  - скрипт предсказания сущностей по файлу 'test.csv'  
+├── ner_testing.py   - скрипт для тестирования класса DataTransform  
 ├── model/           - каталог с предобученной моделью BERT или DeBERTa  
 │       ├── config.json  
 │       ├── model.safetensors  
