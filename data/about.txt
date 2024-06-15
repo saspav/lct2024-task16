@@ -1,0 +1,11 @@
+gt_test.csv - тестовый датасет
+train_data.csv - тренировочный датасет
+train_merged.csv - датасет с дополненной разметкой
+train_test_extend_1.zip - датасет с синтетикой 1-я версия
+train_test_extend_2.zip - датасет с синтетикой 2-я версия
+train_test_extend_3.zip - датасет с синтетикой 1:3500 2:1500
+train_test_extend_4.zip - датасет с синтетикой 1:2000 2:1000
+train_test_extend_5.zip - датасет с синтетикой 1:4000 2:2000
+train_test_extend_6.zip - датасет с синтетикой 1:5000 2:2000
+train_test_extend_7.zip - датасет с синтетикой 1:2500 2:1000
+train_test_extend_8.zip - датасет с синтетикой 1:2500 2:1000 с пропорциями разметки как в train_merged.csv

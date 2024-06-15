@@ -13,8 +13,7 @@
 
 1. Работоспособность модели проверена на Python 3.10 и 3.11.  
 2. В файле requirements.txt необходимые модули для работы.  
-3. Получение предсказаний из файла gt_test.csv: python.exe main_predict.py  
-4. Структура проекта:  
+3. Структура проекта:  
 aeroplane/  
 ├── index.html       - HTML-файл для работы с API приложения через браузер  
 ├── api_app.py       - приложение для работы с моделью  
@@ -22,11 +21,14 @@ aeroplane/
 ├── data_process.py  - класс для обработки текста и поиск сущностей  
 ├── main_predict.py  - скрипт предсказания сущностей по файлу 'gt_test.csv'  
 ├── ner_testing.py   - скрипт для тестирования класса DataTransform  
-├── data/            - каталог с данными  
+├── data/            - каталог с датасетами  
+│       ├── about.txt - описание структуры датасетов  
 │       ├── gt_test.csv - тестовые данные для предсказаний  
+│       ├── train_data.csv - тренировочный датасет
+│       ├── train_test_extend_Z.zip - архивы с синтетическими данными  
 ├── docs/            - каталог с документацией  
 │       ├── Алгоритм работы модели.docx  
-└── jupiter_notebooks/ - каталог с тетрадками jupiter notebook 
+└── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
 │       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
 │       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
 │       ├── predict-test.ipynb - получение предсказаний  
@@ -39,7 +41,8 @@ aeroplane/
 ├── requirements.txt - необходимые библиотеки для проекта  
 └── Dockerfile       - инструкции для создания образа контейнера  
 
-5. Предобученную модель нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модель находится в каталоге .model/) - всё содержимое каталога положить в каталог проекта aeroplane/model/
+4. Предобученную модель нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модель находится в каталоге .model/) - всё содержимое каталога положить в каталог проекта aeroplane/model/
+5. Получение предсказаний из файла gt_test.csv: python.exe main_predict.py  
 6. Сборка и запуск докер-контейнера:  
 docker build -t aeroplane_app .  
 docker run -d -p 8000:8000 --name aeroplane aeroplane_app  

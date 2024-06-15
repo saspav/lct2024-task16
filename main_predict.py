@@ -5,7 +5,7 @@ from data_process import DataTransform
 
 dps = DataTransform()
 
-test_df = pd.read_csv('./data/test.csv', sep=',')
+test_df = pd.read_csv('./data/gt_test.csv', sep=',')
 
 result = pd.DataFrame(columns=['processed_text', 'label'])
 
