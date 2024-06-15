@@ -33,7 +33,8 @@ aeroplane/
 ├── requirements.txt - необходимые библиотеки для проекта  
 └── Dockerfile       - инструкции для создания образа контейнера  
 
-5. Сборка и запуск докер-контейнера:  
+5. Предобученную модель нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack
+6. Сборка и запуск докер-контейнера:  
 docker build -t aeroplane_app .  
 docker run -d -p 8000:8000 --name aeroplane aeroplane_app  
 7. Работоспособность API можно проверить из командной строки командой:  
