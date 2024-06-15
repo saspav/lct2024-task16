@@ -33,12 +33,8 @@ aeroplane/
 ├── requirements.txt - необходимые библиотеки для проекта  
 └── Dockerfile       - инструкции для создания образа контейнера  
 
-5. Сборка и запуск докер-контейнера:
-   
-docker build -t aeroplane_app .
-
-docker run -d -p 8000:8000 --name aeroplane aeroplane_app
-
-7. Работоспособность API можно проверить из командной строки командой:
-
-curl -X POST "http://127.0.0.1:8000/ner" -H "Content-Type: application/json" -d "{\"text\":\"Привет как дела Предоставите скидку в пять процентов на все товары\"}"
+5. Сборка и запуск докер-контейнера:  
+docker build -t aeroplane_app .  
+docker run -d -p 8000:8000 --name aeroplane aeroplane_app  
+7. Работоспособность API можно проверить из командной строки командой:  
+curl -X POST "http://127.0.0.1:8000/ner" -H "Content-Type: application/json" -d "{\"text\":\"Привет как дела Предоставите скидку в пять процентов на все товары\"}"  
