@@ -5,7 +5,7 @@ from data_process import DataTransform
 
 dps = DataTransform()
 
-test_df = pd.read_csv('test.csv', sep=',')
+test_df = pd.read_csv('./data/test.csv', sep=',')
 
 result = pd.DataFrame(columns=['processed_text', 'label'])
 
@@ -18,4 +18,4 @@ for i, row in tqdm(test_df.iterrows(), total=len(test_df)):
 
     result.loc[len(result)] = [input_text, labels]
 
-result.to_csv('gt_test.csv', index=False)
+result.to_csv('./data/gt_test.csv', index=False)
