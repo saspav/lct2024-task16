@@ -45,6 +45,7 @@ aeroplane/
 5. Получение предсказаний из файла gt_test.csv:  
 python.exe main_predict.py  
 6. Сборка и запуск докер-контейнера:  
+перейти в каталог с проектом .aeroplane/ в нем выполнить команды:  
 docker build -t aeroplane_app .  
 docker run -d -p 8000:8000 --name aeroplane aeroplane_app  
 7. Работоспособность API можно проверить из командной строки командой:  
