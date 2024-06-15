@@ -42,7 +42,8 @@ aeroplane/
 └── Dockerfile       - инструкции для создания образа контейнера  
 
 4. Предобученную модель нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модель находится в каталоге .model/) - всё содержимое каталога положить в каталог проекта aeroplane/model/
-5. Получение предсказаний из файла gt_test.csv: python.exe main_predict.py  
+5. Получение предсказаний из файла gt_test.csv:  
+python.exe main_predict.py  
 6. Сборка и запуск докер-контейнера:  
 docker build -t aeroplane_app .  
 docker run -d -p 8000:8000 --name aeroplane aeroplane_app  
