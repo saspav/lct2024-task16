@@ -13,7 +13,7 @@
 
 1. Работоспособность модели проверена на Python 3.10 и 3.11.  
 2. В файле requirements.txt необходимые модули для работы.  
-3. Получение предсказаний из файла test.csv: python.exe main_predict.py  
+3. Получение предсказаний из файла gt_test.csv: python.exe main_predict.py  
 4. Структура проекта:  
 aeroplane/  
 ├── index.html       - HTML-файл для работы с API приложения через браузер  
