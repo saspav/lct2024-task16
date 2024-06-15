@@ -26,7 +26,7 @@ aeroplane/
 │       ├── gt_test.csv - тестовые данные для предсказаний  
 ├── docs/            - каталог с документацией  
 │       ├── Алгоритм работы модели.docx  
-└── jupiter_notebooks/ - каталог с тетрадками jupiter notebook 
+└── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
 │       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
 │       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
 │       ├── predict-test.ipynb - получение предсказаний  
