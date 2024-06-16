@@ -14,37 +14,46 @@
 1. Работоспособность модели проверена на Python 3.10 и 3.11.  
 2. В файле requirements.txt необходимые модули для работы.  
 3. Структура проекта:  
-aeroplane/  
+predict.bat – командный файл для получения сабмита  
+aeroplane/ - каталог проекта  
 ├── index.html       - HTML-файл для работы с API приложения через браузер  
 ├── api_app.py       - приложение для работы с моделью  
 ├── api_app_reqs.py  - проверка работы API приложения из Python  
 ├── data_process.py  - класс для обработки текста и поиск сущностей  
-├── main_predict.py  - скрипт предсказания сущностей по файлу 'gt_test.csv'  
+├── main_predict.py  - скрипт предсказания сущностей моделью BERT  
+├── main_predict_mdeberta.py - скрипт предсказания сущностей моделью DeBERTa  
 ├── ner_testing.py   - скрипт для тестирования класса DataTransform  
 ├── data/            - каталог с датасетами  
 │       ├── about.txt - описание структуры датасетов  
 │       ├── gt_test.csv - тестовые данные для предсказаний  
 │       ├── train_data.csv - тренировочный датасет  
-│       ├── train_test_extend_Z.zip - архивы с синтетическими данными  
+│       └── train_test_extend_Z.zip - архивы с синтетическими данными  
 ├── docs/            - каталог с документацией  
-│       ├── Алгоритм работы модели.docx  
-└── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
+│       └── Алгоритм работы модели.docx  
+├── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
 │       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
 │       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
-│       ├── predict-test.ipynb - получение предсказаний  
-├── model/           - каталог с предобученной моделью BERT или DeBERTa  
+│       └── predict-test.ipynb - получение предсказаний  
+├── model/           - каталог с предобученной моделью BERT  
 │       ├── config.json  
 │       ├── model.safetensors  
 │       ├── special_tokens_map.json  
 │       ├── tokenizer_config.json  
-│       ├── vocab.txt  
+│       └── vocab.txt  
+├── model_mdb/ 	     - каталог с предобученной моделью DeBERTa  
+│       ├── config.json  
+│       ├── model.safetensors  
+│       ├── spm.model  
+│       └── tokenizer_config.json  
 ├── requirements.txt - необходимые библиотеки для проекта  
 └── Dockerfile       - инструкции для создания образа контейнера  
 
-4. Предобученную модель нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модель находится в каталоге .model/) - всё содержимое каталога положить в каталог проекта aeroplane/model/
+4. Предобученные модели нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модели находятся в каталоге .model/ и .model_mdb/) - всё содержимое каталогов положить в соответствующий каталог проекта aeroplane/model/ и aeroplane/model_mdb/  
 5. Получение предсказаний из файла gt_test.csv:  
 python.exe main_predict.py  
-6. Сборка и запуск докер-контейнера:  
+или  
+python.exe main_predict_mdeberta.py  
+6. Сборка и запуск докер-контейнера (используется модель BERT, т.к. менее ресурсоемкая):  
 перейти в каталог с проектом .aeroplane/ в нем выполнить команды:  
 docker build -t aeroplane_app .  
 docker run -d -p 8000:8000 --name aeroplane aeroplane_app  
