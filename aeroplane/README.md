@@ -14,8 +14,18 @@
 1. Работоспособность модели проверена на Python 3.10 и 3.11.  
 2. В файле requirements.txt необходимые модули для работы.  
 3. Структура проекта:  
-predict.bat – командный файл для получения сабмита  
-aeroplane/ - каталог проекта  
+├ predict.bat – командный файл для получения сабмита  
+│  
+├ jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
+│       ├── eda_merged.ipynb - EDA - исследование датасета  
+│       ├── fake-text-gpt.ipynb - генерация синтетического датасета 1  
+│       ├── fake-text-gpt_квартиры.ipynb - генерация синтетического датасета 2  
+│       ├── make_extend_dataset.ipynb - добавление к датасету синтетических данных  
+│       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
+│       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
+│       └── predict-test.ipynb - получение предсказаний для сабмита  
+│  
+├ aeroplane/ - каталог проекта  
 ├── index.html       - HTML-файл для работы с API приложения через браузер  
 ├── api_app.py       - приложение для работы с моделью  
 ├── api_app_reqs.py  - проверка работы API приложения из Python  
@@ -30,14 +40,6 @@ aeroplane/ - каталог проекта
 │       └── train_test_extend_Z.zip - архивы с синтетическими данными  
 ├── docs/            - каталог с документацией  
 │       └── Алгоритм работы модели.docx  
-├── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
-│       ├── eda_merged.ipynb - EDA - исследование датасета  
-│       ├── fake-text-gpt.ipynb - генерация синтетического датасета 1  
-│       ├── fake-text-gpt_квартиры.ipynb - генерация синтетического датасета 2  
-│       ├── make_extend_dataset.ipynb - добавление к датасету синтетических данных  
-│       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
-│       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
-│       └── predict-test.ipynb - получение предсказаний для сабмита  
 ├── model/           - каталог с предобученной моделью BERT  
 │       ├── config.json  
 │       ├── model.safetensors  
