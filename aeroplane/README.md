@@ -54,7 +54,7 @@
 ├── requirements.txt - необходимые библиотеки для проекта  
 └── Dockerfile       - инструкции для создания образа контейнера  
 
-4. Предобученные модели нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модели находятся в каталоге .model/ и .model_mdb/) - всё содержимое каталогов положить в соответствующий каталог проекта aeroplane/model/ и aeroplane/model_mdb/  
+4. Предобученные модели нужно скачать из датасета https://www.kaggle.com/datasets/saspav/x5-tech-ai-hack (в датасете модели находятся в каталоге .model/ и .model_mdb/) или с Яндекс-диска по ссылке https://disk.yandex.ru/d/h87XPOmDABTBBA - всё содержимое каталогов положить в соответствующий каталог проекта aeroplane/model/ и aeroplane/model_mdb/  
 5. Получение предсказаний из файла gt_test.csv:  
 python.exe main_predict.py  
 или  
