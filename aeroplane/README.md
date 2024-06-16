@@ -31,9 +31,13 @@ aeroplane/ - каталог проекта
 ├── docs/            - каталог с документацией  
 │       └── Алгоритм работы модели.docx  
 ├── jupiter_notebooks/ - каталог с тетрадками jupiter notebook  
+│       ├── eda_merged.ipynb - EDA - исследование датасета  
+│       ├── fake-text-gpt.ipynb - генерация синтетического датасета 1  
+│       ├── fake-text-gpt_квартиры.ipynb - генерация синтетического датасета 2  
+│       ├── make_extend_dataset.ipynb - добавление к датасету синтетических данных  
 │       ├── lct-task-16-berta.ipynb - обучение моделей семейства BERT  
 │       ├── lct-task-16-mdeberta.ipynb - обучение моделей семейства DeBERTa  
-│       └── predict-test.ipynb - получение предсказаний  
+│       └── predict-test.ipynb - получение предсказаний для сабмита  
 ├── model/           - каталог с предобученной моделью BERT  
 │       ├── config.json  
 │       ├── model.safetensors  
